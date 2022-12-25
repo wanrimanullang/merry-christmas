@@ -4,7 +4,8 @@ document.querySelector('button').addEventListener('click', function () {
   player.load();
   player.play();
 
-  var result = `.preview {
+  var result = `
+  .preview {
   background: #bcd6d3;
   position: relative;
   color: #d9604b;
@@ -13,6 +14,12 @@ document.querySelector('button').addEventListener('click', function () {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+}
+.preview h2 {
+  margin-top: 10px;
+}
+.preview h2,h5, .star {
+  visibility: visible;
 }
 .santa {
   display: flex;
@@ -269,44 +276,7 @@ document.querySelector('button').addEventListener('click', function () {
   transform: rotate(12deg);
   right: 20px;
 }
-.star {
-  position: absolute;
-  transform: scale(2);
-  animation: blink ease 1s infinite alternate;
-}
-.star.star1 {
-  left: calc(50 - 90px);
-  top: 100px;
-}
-.star.star2 {
-  left: calc(50% - 125px);
-  top: 320px;
-}
-.star.star3 {
-  left: calc(50% - 80px);
-  top: 200px;
-}
-.star.star4 {
-  left: calc(50% + 120px);
-  top: 300px;
-}
-.star.star5 {
-  left: calc(50% + 80px);
-  top: 200px;
-}
-.star.star6 {
-  left: calc(50% + 100px);
-  top: 130px;
-}
 
-.preview h2 {
-  margin-top: 10px;
-  animation: blink ease 1.2s infinite alternate;
-}
-
-.preview h2, .star {
-  visibility: visible;
-}
 
 `;
 
